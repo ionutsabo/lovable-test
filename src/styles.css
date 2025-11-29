@@ -145,11 +145,6 @@ html { scroll-behavior: smooth; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
-.skip-link {
-  position: absolute; left: 0; top: -40px; background: var(--primary); color: var(--primary-ink); padding: .5rem .75rem; border-radius: .5rem; z-index: 1000;
-}
-.skip-link:focus { top: 10px; outline: 2px solid var(--primary); }
-
 :where(a, button, summary, .btn) { outline: none; }
 :where(a, button, summary, .btn):focus-visible {
   outline: 2px solid var(--primary);
