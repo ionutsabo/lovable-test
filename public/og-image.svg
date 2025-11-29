@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#6ee7ff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0f17"/>
+  <g opacity="0.18">
+    <circle cx="150" cy="120" r="220" fill="#a78bfa"/>
+    <circle cx="1050" cy="140" r="260" fill="#6ee7ff"/>
+    <circle cx="600" cy="640" r="340" fill="#34d399"/>
+  </g>
+  <rect x="72" y="72" width="120" height="120" rx="28" fill="url(#g)"/>
+  <text x="220" y="120" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="56">Growth Booster CRM</text>
+  <text x="220" y="180" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="28">Automate outreach, qualify faster, and close more deals</text>
+  <g transform="translate(72, 230)">
+    <rect x="0" y="0" width="1056" height="328" rx="16" fill="#0f1522" stroke="#334155"/>
+    <g transform="translate(28,28)">
+      <rect x="0" y="0" width="240" height="40" rx="10" fill="#111827" stroke="#334155"/>
+      <rect x="0" y="60" width="720" height="16" rx="8" fill="#111827" stroke="#334155"/>
+      <rect x="0" y="90" width="660" height="16" rx="8" fill="#111827" stroke="#334155"/>
+      <rect x="0" y="120" width="520" height="16" rx="8" fill="#111827" stroke="#334155"/>
+      <rect x="0" y="180" width="1000" height="96" rx="12" fill="#0b0f17" stroke="#334155"/>
+      <rect x="16" y="192" width="120" height="72" rx="10" fill="url(#g)"/>
+      <text x="152" y="236" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="22">Start your 14‑day free trial</text>
+    </g>
+  </g>
+</svg>
