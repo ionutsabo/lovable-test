@@ -1,1 +1,44 @@
-import React from 'react'\n\nconst STEPS = [\n  { title: 'Import your leads', desc: \"Sync from your CRM or upload a CSV. We'll enrich missing data automatically.\", num: 1 },\n  { title: 'Pick a playbook', desc: 'Choose from proven sequences for outbound, activation, or expansion.', num: 2 },\n  { title: 'Launch and iterate', desc: 'AI suggests optimizations and next best actions to boost reply rates.', num: 3 },\n]\n\nexport default function HowItWorks(){\n  return (\n    <section className=\"section\" id=\"how\">\n      <div className=\"container grid cols-2\" style={{alignItems:'start'}}>\n        <div>\n          <header className=\"section-header\" style={{textAlign:'left'}}>\n            <div className=\"section-eyebrow\">How it works</div>\n            <h2 className=\"section-title\">From zero to pipeline in a day</h2>\n            <p className=\"section-desc\">Simple setup. Measurable results. Ship your first sequence in under 30 minutes.</p>\n          </header>\n          <div style={{display:'grid', gap:'.9rem'}}>\n            {STEPS.map(s => (\n              <div key={s.num} className=\"card step\">\n                <div className=\"step-num\">{s.num}</div>\n                <div>\n                  <div style={{fontWeight:800, color:'var(--heading)'}}>{s.title}</div>\n                  <div style={{color:'var(--muted)'}}>{s.desc}</div>\n                </div>\n              </div>\n            ))}\n          </div>\n        </div>\n        <div style={{alignSelf:'center'}}>\n          <div className=\"card\" style={{padding:'1rem'}}>\n            <div style={{height:360, border:'1px dashed rgba(148,163,184,.35)', borderRadius:12, display:'grid', placeItems:'center', color:'var(--muted)'}}>\n              <div>\n                <div style={{textAlign:'center', marginBottom:8}}>Setup preview</div>\n                <div className=\"kbd\">Screenshot placeholder</div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n  )\n}\n
+import React from 'react'
+
+const STEPS = [
+  { title: "Import your leads", desc: "Sync from your CRM or upload a CSV. We'll enrich missing data automatically.", num: 1 },
+  { title: 'Pick a playbook', desc: 'Choose from proven sequences for outbound, activation, or expansion.', num: 2 },
+  { title: 'Launch and iterate', desc: 'AI suggests optimizations and next best actions to boost reply rates.', num: 3 },
+]
+
+export default function HowItWorks(){
+  return (
+    <section className="section" id="how">
+      <div className="container grid cols-2" style={{alignItems:'start'}}>
+        <div>
+          <header className="section-header" style={{textAlign:'left'}}>
+            <div className="section-eyebrow">How it works</div>
+            <h2 className="section-title">From zero to pipeline in a day</h2>
+            <p className="section-desc">Simple setup. Measurable results. Ship your first sequence in under 30 minutes.</p>
+          </header>
+          <div style={{display:'grid', gap:'.9rem'}}>
+            {STEPS.map(s => (
+              <div key={s.num} className="card step">
+                <div className="step-num">{s.num}</div>
+                <div>
+                  <div style={{fontWeight:800, color:'var(--heading)'}}>{s.title}</div>
+                  <div style={{color:'var(--muted)'}}>{s.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div style={{alignSelf:'center'}}>
+          <div className="card" style={{padding:'1rem'}}>
+            <div style={{height:360, border:'1px dashed rgba(148,163,184,.35)', borderRadius:12, display:'grid', placeItems:'center', color:'var(--muted)'}}>
+              <div>
+                <div style={{textAlign:'center', marginBottom:8}}>Setup preview</div>
+                <div className="kbd">Screenshot placeholder</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
