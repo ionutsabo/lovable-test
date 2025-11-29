@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 export default function Footer(){
   const year = new Date().getFullYear()
@@ -7,13 +6,13 @@ export default function Footer(){
     <footer className="section" style={{paddingTop:'2rem'}}>
       <div className="container" style={{display:'grid', gap:'1.5rem'}}>
         <div style={{display:'flex', alignItems:'center', gap:'.6rem'}}>
-          <div style={{width:24, height:24, borderRadius:6, background:'conic-gradient(from 140deg, #7c3aed, #1f5df7)'}} />
+          <div style={{width:24, height:24, borderRadius:6, background:'linear-gradient(135deg, #6ee7ff, #a78bfa)'}} />
           <strong style={{color:'var(--heading)'}}>Growth Booster</strong>
         </div>
         <div style={{display:'flex', gap:'1rem', flexWrap:'wrap'}}>
-          <Link to="/features" className="btn ghost" style={{padding:'.45rem .7rem'}}>Features</Link>
-          <Link to="/pricing" className="btn ghost" style={{padding:'.45rem .7rem'}}>Pricing</Link>
-          <Link to="/faq" className="btn ghost" style={{padding:'.45rem .7rem'}}>FAQ</Link>
+          <a href="#features" className="btn ghost" style={{padding:'.45rem .7rem'}}>Features</a>
+          <a href="#pricing" className="btn ghost" style={{padding:'.45rem .7rem'}}>Pricing</a>
+          <a href="#faq" className="btn ghost" style={{padding:'.45rem .7rem'}}>FAQ</a>
           <a href="#" className="btn ghost" style={{padding:'.45rem .7rem'}}>Privacy</a>
           <a href="#" className="btn ghost" style={{padding:'.45rem .7rem'}}>Terms</a>
         </div>
