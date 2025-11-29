@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer(){
   const year = new Date().getFullYear()
@@ -10,9 +11,9 @@ export default function Footer(){
           <strong style={{color:'var(--heading)'}}>Growth Booster</strong>
         </div>
         <div style={{display:'flex', gap:'1rem', flexWrap:'wrap'}}>
-          <a href="#features" className="btn ghost" style={{padding:'.45rem .7rem'}}>Features</a>
-          <a href="#pricing" className="btn ghost" style={{padding:'.45rem .7rem'}}>Pricing</a>
-          <a href="#faq" className="btn ghost" style={{padding:'.45rem .7rem'}}>FAQ</a>
+          <Link to="/features" className="btn ghost" style={{padding:'.45rem .7rem'}}>Features</Link>
+          <Link to="/pricing" className="btn ghost" style={{padding:'.45rem .7rem'}}>Pricing</Link>
+          <Link to="/faq" className="btn ghost" style={{padding:'.45rem .7rem'}}>FAQ</Link>
           <a href="#" className="btn ghost" style={{padding:'.45rem .7rem'}}>Privacy</a>
           <a href="#" className="btn ghost" style={{padding:'.45rem .7rem'}}>Terms</a>
         </div>

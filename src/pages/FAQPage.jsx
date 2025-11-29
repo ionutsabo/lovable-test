@@ -1,8 +1,10 @@
 import React from 'react'
 import FAQ from '../components/FAQ'
 
-export default function FAQPage(){
+export default function FAQPage() {
   return (
-    <main className="page"><FAQ /></main>
+    <main id="main">
+      <FAQ />
+    </main>
   )
 }

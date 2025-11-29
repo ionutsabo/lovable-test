@@ -29,7 +29,7 @@ export default function Pricing(){
                   <li key={idx}><span className="tick">✓</span><span>{f}</span></li>
                 ))}
               </ul>
-              <a href="#cta" className={`btn ${p.highlight ? 'primary':''}`}>{p.cta}</a>
+              <a href="/#cta" className={`btn ${p.highlight ? 'primary':''}`}>{p.cta}</a>
             </div>
           ))}
         </div>
